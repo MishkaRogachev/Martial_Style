@@ -8,12 +8,17 @@ Button {
 
     property alias iconSource: image.source
 
+    font.pointSize: 11
+
     background: Rectangle {
         id: backgroundRect
         implicitWidth: palette.controlBaseSize
         implicitHeight: implicitWidth
-        color: button.pressed || button.checked ?
-                   palette.highlightColor : palette.backgoundRaisedColor
+        color: {
+            if (!enabled) return palette.disabledColor;
+            return button.pressed || button.checked ?
+                        palette.highlightColor : palette.raisedColor
+        }
     }
 
     contentItem: Item {

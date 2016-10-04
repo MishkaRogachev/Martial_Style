@@ -9,7 +9,7 @@ Menu {
     background: Rectangle {
         implicitWidth: 128
         implicitHeight: 128
-        color: palette.backgoundRaisedColor
+        color: palette.raisedColor
         border.color: palette.highlightColor
     }
 }

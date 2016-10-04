@@ -7,5 +7,8 @@
         <file>ToolBar.qml</file>
         <file>Label.qml</file>
         <file>Menu.qml</file>
+        <file>Frame.qml</file>
+        <file>Slider.qml</file>
+        <file>ComboBox.qml</file>
     </qresource>
 </RCC>
