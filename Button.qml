@@ -4,7 +4,17 @@ import QtQuick.Controls 2.0
 Button {
     id: button
 
+    property Palette palette: Palette {}
+
     property alias iconSource: image.source
+
+    background: Rectangle {
+        id: backgroundRect
+        implicitWidth: 32
+        implicitHeight: 32
+        color: button.pressed || button.checked ?
+                   palette.highlightColor : palette.backgoundRaisedColor
+    }
 
     contentItem: Item {
         implicitWidth: row.width

@@ -2,5 +2,8 @@
     <qresource prefix="/Martial">
         <file>Button.qml</file>
         <file>ButtonBar.qml</file>
+        <file>Pane.qml</file>
+        <file>Palette.qml</file>
+        <file>ToolBar.qml</file>
     </qresource>
 </RCC>
