@@ -1,17 +1,17 @@
 import QtQuick 2.6
 import QtQuick.Controls 2.0
 
+import "./"
+
 Button {
     id: button
-
-    property Palette palette: Palette {}
 
     property alias iconSource: image.source
 
     background: Rectangle {
         id: backgroundRect
-        implicitWidth: 32
-        implicitHeight: 32
+        implicitWidth: palette.controlBaseSize
+        implicitHeight: implicitWidth
         color: button.pressed || button.checked ?
                    palette.highlightColor : palette.backgoundRaisedColor
     }

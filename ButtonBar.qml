@@ -2,10 +2,10 @@ import QtQuick 2.6
 import QtQuick.Controls 2.0
 import QtQuick.Layouts 1.3
 
-import "./";
+import "./"
 
 ColumnLayout {
-    id: root
+    id: buttonBar
 
     property alias model: repeater.model
     property int currentIndex: -1

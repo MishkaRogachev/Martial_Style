@@ -5,5 +5,7 @@
         <file>Pane.qml</file>
         <file>Palette.qml</file>
         <file>ToolBar.qml</file>
+        <file>Label.qml</file>
+        <file>Menu.qml</file>
     </qresource>
 </RCC>

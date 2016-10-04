@@ -1,8 +1,10 @@
 import QtQuick 2.6
 import QtQuick.Controls 2.0
 
+import "./"
+
 ToolBar {
-    property Palette palette: Palette {}
+    id: toolBar
 
     background: Rectangle {
         color: palette.backgoundRaisedColor
