@@ -4,7 +4,7 @@ import QtQuick.Controls 2.0
 import "./"
 
 Button {
-    id: button
+    id: control
 
     property alias iconSource: image.source
 
@@ -16,7 +16,7 @@ Button {
         implicitHeight: implicitWidth
         color: {
             if (!enabled) return palette.disabledColor;
-            return button.pressed || button.checked ?
+            return control.pressed || control.checked ?
                         palette.highlightColor : palette.raisedColor
         }
     }
@@ -37,8 +37,8 @@ Button {
             }
 
             Label {
-                font: button.font
-                text: button.text
+                font: control.font
+                text: control.text
                 anchors.verticalCenter: parent.verticalCenter
             }
         }

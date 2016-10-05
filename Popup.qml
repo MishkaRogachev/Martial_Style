@@ -3,10 +3,7 @@ import QtQuick.Controls 2.0
 
 import "./"
 
-Frame {
+Popup {
     id: control
 
-    background: Rectangle {
-        color: palette.raisedColor
-    }
 }

@@ -4,7 +4,7 @@ import QtQuick.Controls 2.0
 import "./"
 
 ToolBar {
-    id: toolBar
+    id: control
 
     background: Rectangle {
         color: palette.raisedColor

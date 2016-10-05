@@ -4,7 +4,8 @@ import QtQuick.Controls 2.0
 import "./"
 
 Label {
-    id: label
-    font.pointSize: 11
+    id: control
+
+    font.pointSize: palette.fontSize
     color: palette.textColor
 }

@@ -5,7 +5,7 @@ import QtQuick.Layouts 1.3
 import "./"
 
 ColumnLayout {
-    id: buttonBar
+    id: control
 
     property alias model: repeater.model
     property int currentIndex: -1

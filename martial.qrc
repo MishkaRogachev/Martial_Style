@@ -10,5 +10,8 @@
         <file>Frame.qml</file>
         <file>Slider.qml</file>
         <file>ComboBox.qml</file>
+        <file>TextField.qml</file>
+        <file>ItemDelegate.qml</file>
+        <file>Popup.qml</file>
     </qresource>
 </RCC>

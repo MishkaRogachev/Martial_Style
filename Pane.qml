@@ -4,9 +4,9 @@ import QtQuick.Controls 2.0
 import "./"
 
 Pane {
-    id: pane
+    id: control
 
     background: Rectangle {
-        color: palette.backgoundColor
+        color: palette.backgroundColor
     }
 }
