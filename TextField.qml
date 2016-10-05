@@ -10,7 +10,7 @@ TextField {
     color: palette.textColor
 
     background: Rectangle {
-        implicitWidth: 200
+        implicitWidth: palette.controlBaseWidth
         implicitHeight: palette.controlBaseSize
         color: control.enabled ? palette.sunkenColor : palette.disabledColor
         border.color: control.focus ? palette.highlightColor : "transparent"

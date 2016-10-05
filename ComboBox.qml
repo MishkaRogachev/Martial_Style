@@ -15,10 +15,29 @@ ComboBox {
     }
 
     background: Rectangle {
-        implicitWidth: 200
+        implicitWidth: palette.controlBaseWidth
         implicitHeight: palette.controlBaseSize
         color: control.enabled ? palette.sunkenColor : palette.disabledColor
         border.color: control.focus ? palette.highlightColor : "transparent"
+    }
+
+    indicator: Canvas {
+        visible: control.focus
+        x: control.width - width
+        y: control.height - height
+        width: palette.controlBaseSize / 2
+        height: width
+        contextType: "2d"
+
+        onPaint: {
+            context.reset();
+            context.moveTo(width, 0);
+            context.lineTo(width, height);
+            context.lineTo(0, height);
+            context.closePath();
+            context.fillStyle = palette.highlightColor;
+            context.fill();
+        }
     }
 
     contentItem: Text {

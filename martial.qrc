@@ -13,5 +13,6 @@
         <file>TextField.qml</file>
         <file>ItemDelegate.qml</file>
         <file>Popup.qml</file>
+        <file>SpinBox.qml</file>
     </qresource>
 </RCC>

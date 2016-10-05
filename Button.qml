@@ -39,6 +39,8 @@ Button {
             Label {
                 font: control.font
                 text: control.text
+                color: control.pressed || control.checked ?
+                           palette.highlightTextColor: palette.textColor
                 anchors.verticalCenter: parent.verticalCenter
             }
         }

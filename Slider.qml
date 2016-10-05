@@ -5,6 +5,7 @@ import "./"
 
 Slider {
     id: control
+
     implicitHeight: palette.controlBaseSize
 
     handle: Rectangle {
