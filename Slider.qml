@@ -8,11 +8,27 @@ Slider {
 
     implicitHeight: palette.controlBaseSize
 
+    background: Rectangle {
+        anchors.verticalCenter: parent.verticalCenter
+        color: palette.sunkenColor
+        width: control.availableWidth
+        implicitWidth: palette.controlBaseWidth
+        height: control.height / 4
+        radius: height / 2
+
+        Rectangle {
+            width: control.visualPosition * parent.width
+            height: parent.height
+            color: palette.highlightColor
+            radius: height / 2
+        }
+    }
+
     handle: Rectangle {
-        x: control.leftPadding + control.visualPosition * (control.availableWidth - width)
-        y: control.topPadding + control.availableHeight / 2 - height / 2
-        implicitWidth: control.pressed ? palette.controlBaseSize :
-                                         palette.controlBaseSize / 2
+        x: control.visualPosition * (control.availableWidth - width)
+        anchors.verticalCenter: parent.verticalCenter
+        implicitWidth: control.pressed ? control.height/ 1.5 :
+                                         control.height / 2
         implicitHeight: implicitWidth
         radius: width / 2
         color: palette.highlightColor
