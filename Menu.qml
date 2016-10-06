@@ -7,9 +7,9 @@ Menu {
     id: control
 
     background: Rectangle {
-        implicitWidth: 128
-        implicitHeight: 128
-        color: palette.foregroundColor
+        implicitWidth: palette.controlBaseWidth
+        implicitHeight: palette.controlBaseSize
+        color: palette.sunkenColor
         border.color: control.focus ? palette.selectionColor : "transparent"
     }
 }

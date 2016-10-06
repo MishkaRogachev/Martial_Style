@@ -14,5 +14,6 @@
         <file>ItemDelegate.qml</file>
         <file>Popup.qml</file>
         <file>SpinBox.qml</file>
+        <file>MenuItem.qml</file>
     </qresource>
 </RCC>

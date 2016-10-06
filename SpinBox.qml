@@ -8,6 +8,9 @@ SpinBox {
 
     font.pointSize: palette.fontSize
 
+    leftPadding: padding * 2
+    rightPadding: padding + down.indicator.width + up.indicator.width
+
     contentItem: TextInput {
         text: textFromValue(control.value, control.locale)
         onEditingFinished:control.value = valueFromText(text, control.locale)
@@ -15,7 +18,6 @@ SpinBox {
         color: palette.textColor
         selectionColor: palette.selectionColor
         selectedTextColor: palette.selectedTextColor
-        horizontalAlignment: Qt.AlignHCenter
         verticalAlignment: Qt.AlignVCenter
         readOnly: !control.editable
         validator: control.validator

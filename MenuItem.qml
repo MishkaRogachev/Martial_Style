@@ -3,7 +3,7 @@ import QtQuick.Controls 2.0
 
 import "./"
 
-Button {
+MenuItem {
     id: control
 
     property alias iconSource: image.source
@@ -13,12 +13,7 @@ Button {
     background: Rectangle {
         implicitWidth: palette.controlBaseSize
         implicitHeight: implicitWidth
-        color: {
-            if (!enabled) return palette.disabledColor;
-            if (control.pressed) return palette.highlightColor;
-            if (control.checked) return palette.selectionColor;
-            return palette.raisedColor;
-        }
+        color: control.pressed ? palette.highlightColor : "transparent"
     }
 
     contentItem: Item {
