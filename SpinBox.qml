@@ -13,8 +13,8 @@ SpinBox {
         onEditingFinished:control.value = valueFromText(text, control.locale)
         font: control.font
         color: palette.textColor
-        selectionColor: palette.highlightColor
-        selectedTextColor: palette.highlightTextColor
+        selectionColor: palette.selectionColor
+        selectedTextColor: palette.selectedTextColor
         horizontalAlignment: Qt.AlignHCenter
         verticalAlignment: Qt.AlignVCenter
         readOnly: !control.editable

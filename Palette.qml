@@ -16,7 +16,8 @@ QtObject {
     property color disabledColor: "#424242"
 
     property color textColor: "#FAFAFA"
-    property color highlightTextColor: "#424242"
+    property color selectedTextColor: "#424242"
 
     property color highlightColor: "#00E676"
+    property color selectionColor: "#69F0AE"
 }

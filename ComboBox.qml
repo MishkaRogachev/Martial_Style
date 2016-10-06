@@ -35,7 +35,7 @@ ComboBox {
             context.lineTo(width, height);
             context.lineTo(0, height);
             context.closePath();
-            context.fillStyle = palette.highlightColor;
+            context.fillStyle = palette.selectionColor;
             context.fill();
         }
     }

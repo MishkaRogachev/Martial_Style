@@ -16,8 +16,9 @@ Button {
         implicitHeight: implicitWidth
         color: {
             if (!enabled) return palette.disabledColor;
-            return control.pressed || control.checked ?
-                        palette.highlightColor : palette.raisedColor
+            if (control.pressed) return palette.highlightColor;
+            if (control.checked) return palette.selectionColor;
+            return palette.raisedColor;
         }
     }
 
@@ -40,7 +41,7 @@ Button {
                 font: control.font
                 text: control.text
                 color: control.pressed || control.checked ?
-                           palette.highlightTextColor: palette.textColor
+                           palette.selectedTextColor: palette.textColor
                 anchors.verticalCenter: parent.verticalCenter
             }
         }

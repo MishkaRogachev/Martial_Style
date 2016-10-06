@@ -10,6 +10,6 @@ Menu {
         implicitWidth: 128
         implicitHeight: 128
         color: palette.foregroundColor
-        border.color: control.focus ? palette.highlightColor : "transparent"
+        border.color: control.focus ? palette.selectionColor : "transparent"
     }
 }
