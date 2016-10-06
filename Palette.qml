@@ -13,7 +13,7 @@ QtObject {
     property color raisedColor: "#455A64"
     property color foregroundColor: "#90A4AE"
 
-    property color disabledColor: "#424242"
+    property color disabledColor: "#212121"
 
     property color textColor: "#FAFAFA"
     property color selectedTextColor: "#424242"
