@@ -11,7 +11,7 @@ QtObject {
     property color backgroundColor: "#37474F"
     property color sunkenColor: "#263238"
     property color raisedColor: "#455A64"
-    property color foregroundColor: "#90A4AE"
+    property color buttonColor: "#546E7A"
 
     property color disabledColor: "#212121"
 

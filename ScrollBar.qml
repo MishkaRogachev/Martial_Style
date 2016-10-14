@@ -8,6 +8,6 @@ ScrollBar {
 
     contentItem: Rectangle {
         implicitWidth: palette.controlBaseSize / 8
-        color: control.active ? palette.highlightColor : "transparent"
+        color: control.active ? palette.selectionColor : "transparent"
     }
 }

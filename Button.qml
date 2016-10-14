@@ -17,7 +17,7 @@ Button {
             if (!enabled) return palette.disabledColor;
             if (control.pressed) return palette.highlightColor;
             if (control.checked) return palette.selectionColor;
-            return palette.raisedColor;
+            return palette.buttonColor;
         }
     }
 
