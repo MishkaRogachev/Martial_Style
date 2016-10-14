@@ -15,5 +15,6 @@
         <file>Popup.qml</file>
         <file>SpinBox.qml</file>
         <file>MenuItem.qml</file>
+        <file>ScrollBar.qml</file>
     </qresource>
 </RCC>
