@@ -12,11 +12,15 @@ ItemDelegate {
         text: control.text
         verticalAlignment: Text.AlignVCenter
         font: control.font
-        color: control.highlighted ? palette.highlightColor : palette.textColor
+        color: control.highlighted ? palette.selectedTextColor : palette.textColor
     }
 
     background: Rectangle {
         implicitHeight: palette.controlBaseSize
-        color: palette.sunkenColor
+        color: {
+            if (control.down) return palette.highlightColor;
+            if (control.highlighted) return palette.selectionColor;
+            return palette.sunkenColor;
+        }
     }
 }
