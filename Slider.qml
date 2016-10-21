@@ -17,7 +17,7 @@ Slider {
         radius: height / 2
 
         Rectangle {
-            width: control.visualPosition * parent.width
+            width: control.visualPosition * control.availableWidth
             height: parent.height
             color: palette.selectionColor
             radius: height / 2
@@ -25,7 +25,7 @@ Slider {
     }
 
     handle: Rectangle {
-        x: control.visualPosition * (control.availableWidth - width)
+        x: control.visualPosition * control.availableWidth - width / 2
         anchors.verticalCenter: parent.verticalCenter
         implicitWidth: control.pressed ? control.height :
                                          control.height / 1.5
