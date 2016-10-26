@@ -6,6 +6,13 @@ import "./"
 Label {
     id: control
 
+    property alias iconSource: icon.source
+
+    Image {
+        id: icon
+        anchors.verticalCenter: parent.verticalCenter
+    }
+
     font.pointSize: palette.fontSize
     color: palette.textColor
 }
