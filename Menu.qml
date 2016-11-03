@@ -10,6 +10,5 @@ Menu {
         implicitWidth: palette.controlBaseWidth
         implicitHeight: palette.controlBaseSize
         color: palette.sunkenColor
-        border.color: control.focus ? palette.selectionColor : "transparent"
     }
 }

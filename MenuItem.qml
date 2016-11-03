@@ -14,6 +14,7 @@ MenuItem {
         implicitWidth: palette.controlBaseSize
         implicitHeight: implicitWidth
         color: control.pressed ? palette.highlightColor : "transparent"
+        border.color: control.activeFocus ? palette.selectionColor : "transparent"
     }
 
     contentItem: Item {

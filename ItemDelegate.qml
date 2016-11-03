@@ -17,6 +17,7 @@ ItemDelegate {
 
     background: Rectangle {
         implicitHeight: palette.controlBaseSize
+        border.color: control.activeFocus ? palette.selectionColor : "transparent"
         color: {
             if (control.down) return palette.highlightColor;
             if (control.highlighted) return palette.selectionColor;

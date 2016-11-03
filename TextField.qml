@@ -13,6 +13,6 @@ TextField {
         implicitWidth: palette.controlBaseWidth
         implicitHeight: palette.controlBaseSize
         color: control.enabled ? palette.sunkenColor : palette.disabledColor
-        border.color: control.focus ? palette.highlightColor : "transparent"
+        border.color: control.activeFocus ? palette.highlightColor : "transparent"
     }
 }

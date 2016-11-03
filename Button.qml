@@ -13,6 +13,7 @@ Button {
     background: Rectangle {
         implicitWidth: palette.controlBaseSize
         implicitHeight: implicitWidth
+        border.color: control.activeFocus ? palette.highlightColor : "transparent"
         color: {
             if (!enabled) return palette.disabledColor;
             if (control.pressed) return palette.highlightColor;
