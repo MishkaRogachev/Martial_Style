@@ -16,5 +16,6 @@
         <file>SpinBox.qml</file>
         <file>MenuItem.qml</file>
         <file>ScrollBar.qml</file>
+        <file>ColoredIcon.qml</file>
     </qresource>
 </RCC>
