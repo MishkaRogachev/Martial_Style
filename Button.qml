@@ -6,7 +6,8 @@ import "./"
 Button {
     id: control
 
-    property alias iconSource: image.source
+    property alias iconSource: icon.source
+    property color iconColor: label.color
 
     font.pointSize: 11
 
@@ -33,16 +34,17 @@ Button {
             spacing: 5
 
             ColoredIcon {
-                id: image
-                color: control.pressed || control.checked ?
-                           palette.selectedTextColor: palette.textColor
+                id: icon
+                color: iconColor
                 anchors.verticalCenter: parent.verticalCenter
             }
 
             Label {
+                id: label
                 font: control.font
                 text: control.text
-                color: image.color
+                color: control.pressed || control.checked ?
+                           palette.selectedTextColor: palette.textColor
                 anchors.verticalCenter: parent.verticalCenter
             }
         }
