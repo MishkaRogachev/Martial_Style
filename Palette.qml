@@ -20,4 +20,8 @@ QtObject {
 
     property color highlightColor: "#00E676"
     property color selectionColor: "#69F0AE"
+
+    property color negativeColor: "#F44336"
+    property color neutralColor: "#FFC107"
+    property color positiveColor: "#4CAF50"
 }
