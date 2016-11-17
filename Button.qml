@@ -32,16 +32,17 @@ Button {
             height: parent.availableHeight
             spacing: 5
 
-            Image {
+            ColoredIcon {
                 id: image
+                color: control.pressed || control.checked ?
+                           palette.selectedTextColor: palette.textColor
                 anchors.verticalCenter: parent.verticalCenter
             }
 
             Label {
                 font: control.font
                 text: control.text
-                color: control.pressed || control.checked ?
-                           palette.selectedTextColor: palette.textColor
+                color: image.color
                 anchors.verticalCenter: parent.verticalCenter
             }
         }
